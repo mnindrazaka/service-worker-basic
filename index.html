@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Service Worker Basic</title>
+  </head>
+  <body>
+    <img src="image-1.jpg" />
+    <img src="image-2.jpg" />
+    <img src="image-3.jpg" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
+  </body>
+</html>
